@@ -1,7 +1,29 @@
-@(message: String)
-
-@main("Welcome to Play") {
-
-    @play20.welcome(message, style = "Java")
-
-}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")">
+        <script type="text/javascript" src='@routes.Assets.at("stylesheets/jquery-1.11.3.min.js")'></script>
+        <script type="text/javascript" src='@routes.Application.javascriptRoutes()'></script>
+        <script type="text/javascript" src='@routes.Assets.at("javascripts/main.js")'></script>
+    </head>
+    <h1> Harris' Wonderful World of Tic Tac Toe! </h1>
+    <div class="board">
+        <div class="tile tile-0-0" id="0">
+        </div>
+        <div class="tile tile-1-0" id="1">
+        </div>
+        <div class="tile tile-2-0" id="2">
+        </div>
+        <div class="tile tile-0-1" id="3">
+        </div>
+        <div class="tile tile-1-1" id="4">
+        </div>
+        <div class="tile tile-2-1" id="5">
+        </div>
+        <div class="tile tile-0-2" id="6">
+        </div>
+        <div class="tile tile-1-2" id="7">
+        </div>
+        <div class="tile tile-2-2" id="8">
+        </div>
+    </div>
+</html>

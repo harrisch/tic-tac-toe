@@ -1,0 +1,48 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.board {
+    width: 600px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tile {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.tile:nth-child(3n-1),
+.tile:nth-child(3n-0) {
+    border-left: 3px solid #444;
+}
+.tile:nth-child(4),
+.tile:nth-child(5),
+.tile:nth-child(6),
+.tile:nth-child(7),
+.tile:nth-child(8),
+.tile:nth-child(9) {
+    border-top: 3px solid #444;
+}
+
+.tile-button {
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.tile-button:hover,
+.tile-button:focus {
+    background-color: lightgrey;
+}
